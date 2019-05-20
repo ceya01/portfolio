@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+@import "foundation/variable.scss";
+@import "foundation/mixin.scss";
+@import "foundation/reset.scss";
+@import "foundation/base.scss";
+
+@import "layout/**";
+@import "object/component/**"; 
+@import "object/project/**"; 
+
+

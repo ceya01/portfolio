@@ -1,0 +1,9 @@
+@mixin circle($size) {
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+}
+ 
+@mixin shadow(){
+    box-shadow:0 2px 5px rgba(0,0,0,0.26);  //google
+}

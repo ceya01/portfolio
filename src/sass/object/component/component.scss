@@ -1,0 +1,47 @@
+.c-section{
+    padding: 50px 0;  
+    &__heading{
+        border-bottom: 1px solid $slmo_gray;
+        padding: 0.2em 0;
+        margin-bottom: 1em;
+    }
+} 
+
+.c-icon{
+    $w:100px;
+    max-width: $w;
+    @include circle($w);
+}
+
+.c-form{
+    &__inputText,&__textarea{
+        border: 1px solid $slmo_gray;
+        border-radius: 5px;
+        display: block;
+        margin-bottom:1rem;
+        padding: 0.75em;
+        width:100%;
+        &:active,&:focus{
+            outline:2px solid $slmo_cobalt;
+        }
+        &::placeholder{
+            color:#CCC;
+        }
+    }
+    &__submit{
+        background-color: $slmo_cobalt;
+        border: none;
+        border-radius: 10px;
+        color:white;
+        display: block;
+        padding: 0.75em 0;
+        transition: 0.3s;
+        width:100%;
+        @include shadow();
+        &:hover{
+            box-shadow: 1px 1px 2px #ddf;
+            transition: 0.2s;
+            transform: translateY(2px);
+        }
+    }
+}
