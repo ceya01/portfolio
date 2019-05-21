@@ -9479,6 +9479,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 * {
   color: #2f2e33;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
 }
 
 img {
@@ -9488,6 +9490,14 @@ img {
 
 .l-main {
   width: 100%;
+}
+
+.l-footer {
+  background-color: #3a5199;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 0;
 }
 
 .c-section {
@@ -9597,6 +9607,7 @@ img {
   color: #ffffff;
   font-size: 24px;
   text-align: center;
+  letter-spacing: 0.05em;
   margin: 0 auto;
   padding: .5em;
   width: 160px;
@@ -9636,13 +9647,23 @@ img {
 }
 
 .p-skillBlock > .progress {
-  height: 20px;
+  height: 25px;
+  font-size: 0.9rem;
+  background-color: #999;
+  transition: 0.25s;
+}
+
+.p-skillBlock > .progress:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.25s;
+  transform: translateY(2px);
 }
 
 .p-skillBlock > .progress > .progress-bar {
   padding-left: 0.5em;
+  letter-spacing: 0.05em;
   text-align: left;
-  font-weight: bold;
 }
 
 .p-workCol {

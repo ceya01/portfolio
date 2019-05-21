@@ -26,7 +26,7 @@
                     <div class="col-12 col-sm-3">
                         <div class="row">
                             <div class="col-3 col-sm-12 p-colIcon">
-                                <img src="img/ceyaneko_20190111.png" alt="ceya_icon" class="c-icon">
+                                <img src="asset/img/ceyaneko_20190111.png" alt="ceya_icon" class="c-icon">
                             </div>
                             <div class="col-9 col-sm-12 p-colMeta">
                                 <a href="https://ce-ya.net" class="__iconLink"><i class="fas fa-home"></i></a>
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-9">
+                    <div class="col-12 col-sm-9 p-profText">
                         <p>大学卒業後、2013年よりフリーランスとして活動</p>
                         <ul>
                             <li>アフィリエイト/アドセンスサイト運営</li>
@@ -52,8 +52,10 @@
                             <li>Flashゲーム制作（趣味）</li>
                         </ul>
                         <p>2019年よりITエンジニアに転向するため、本格的にweb系の技術を勉強開始。<br>
-                            実務としてチームでの開発経験は未経験だが、個人でのプログラミングは4000時間ほどの経験あり。<br>
-                            効率化 / 高速化 / 見やすさ / ユーザビリティを考えるのが好き。</p>
+                            チームでの実務開発は未経験だが、個人では4000時間ほどのプログラミング経験あり。<br>
+                            効率化 / 高速化 / 見やすさ / ユーザビリティを考えるのが好き。<br>
+                            どちらかというと、バックエンドよりフロントエンドが好み。
+                        </p>
                     </div>
                 </div>
             </div>
@@ -61,22 +63,47 @@
         <section class="l-skill c-section">
             <div class="c-section__inner">
                 <h2 class="c-section__heading"><i class="fas fa-drafting-compass"></i>SKILLS</h2>
-                <div class="row">
-                    <div class="col-4 col-sm-6">
-                        <div class="p-skillBlock">
+                <div class="row" id="appSkills"> 
+                    <div class="col-4 col-sm-6" v-click-outside="showDefault">
+                        <div class="p-skillBlock" @click="showDesc('html')">
                             <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%">HTML : 60%</div>
+                                <div class="progress-bar bg-success"  style="width: 50%">HTML&CSS : 50%</div>
                             </div>
                         </div>
-                        <div class="p-skillBlock">
+                        <div class="p-skillBlock"  @click="showDesc('js')">
                             <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%">CSS : 60%</div>
+                                <div class="progress-bar bg-success"  style="width: 50%">JavaScript : 50%</div>
+                            </div>
+                        </div>
+                        <div class="p-skillBlock"  @click="showDesc('php')">
+                            <div class="progress">
+                                <div class="progress-bar bg-success"  style="width: 40%">PHP&MySQL  : 40%</div>
+                            </div>
+                        </div>
+                        <div class="p-skillBlock"  @click="showDesc('wp')">
+                            <div class="progress">
+                                <div class="progress-bar bg-success"  style="width: 60%">WordPress : 60%</div>
+                            </div>
+                        </div>
+                        <div class="p-skillBlock"  @click="showDesc('design')">
+                            <div class="progress">
+                                <div class="progress-bar bg-success"  style="width: 30%">webデザイン : 30%</div>
+                            </div>
+                        </div>
+                        <div class="p-skillBlock"  @click="showDesc('video')">
+                            <div class="progress">
+                                <div class="progress-bar bg-success"  style="width: 60%">動画編集/アニメーション制作 : 60%</div>
+                            </div>
+                        </div>
+                        <div class="p-skillBlock"  @click="showDesc('seo')">
+                            <div class="progress">
+                                <div class="progress-bar bg-success"  style="width: 70%">SEO/webサイト運営 : 70%</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-8 col-sm-6">
-                        <h3>HTML</h3>
-                        <p>チョットデキル</p>
+                        <h3 class="p-skillTitle">{{title}}</h3>
+                        <p v-html="desc"></p>
                     </div>
                 </div>
             </div>
@@ -86,22 +113,16 @@
                 <h2 class="c-section__heading"><i class="far fa-newspaper"></i>WORKS</h2>
                 <!-- <div class="c-section__subText">クリックで詳細を表示</div> -->
                 <div class="row">
-                    <div class="col-6 col-md-4 p-workCol">
+                    <div class="col-6 col-md-6 p-workCol">
                         <div class="card p-workCard" data-toggle="modal" data-target="#modal_hiwihi">
                             <div class="card-header p-workCard__header">ﾋｳｨｯﾋﾋｰ</div>
-                            <img class="card-img-bottom  p-workCard__img" src="/img/scrn_hiwihi.png" alt="hiwihi scrn">
+                            <img class="card-img-bottom  p-workCard__img" src="/asset/img/scrn_hiwihi.png" alt="hiwihi scrn">
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 p-workCol" data-toggle="modal" data-target="#modal_pcw">
+                    <div class="col-6 col-md-6 p-workCol" data-toggle="modal" data-target="#modal_pcw">
                         <div class="card p-workCard">
                             <div class="card-header p-workCard__header">ぱちぇコンウォーズ</div>
-                            <img class="card-img-bottom  p-workCard__img" src="/img/scrn_hiwihi.png" alt="pcw scrn">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 p-workCol" data-toggle="modal" data-target="#modal_gatool">
-                        <div class="card p-workCard">
-                            <div class="card-header p-workCard__header">GA Tool</div>
-                            <img class="card-img-bottom  p-workCard__img" src="/img/scrn_hiwihi.png" alt="hiwihi scrn">
+                            <img class="card-img-bottom  p-workCard__img" src="/asset/img/scrn_pcw01.png" alt="pcw scrn">
                         </div>
                     </div>
                 </div>
@@ -118,12 +139,12 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <img class="p-workModal__img" src="/img/scrn_hiwihi.png" alt="hiwihi scrn">
+                            <img class="p-workModal__img" src="/asset/img/scrn_hiwihi.png" alt="hiwihi scrn">
                             <p class="p-workModal__text">
                                 簡素なツイッターのようなアプリ。webサービス作成の基礎勉強のために作成。<br>
-                                主にPHP,js/jQueryを使用。フレームワークは未使用。<br>
-                                ユーザー登録、プロフィールの編集、ツイートの投稿/編集/削除 という最低限の機能のみ。<br>
-                                制作時間は80hほど。
+                                主にPHP,js,jQuery,ajaxを使用。フレームワークは未使用。<br>
+                                ユーザー登録、プロフィールの編集、ツイートの投稿/編集/削除 という最低限の機能を実装。<br>
+                                制作時間は80時間ほど。
                             </p>
                             <div class="p-workModal__footText">
                                 <i class="fas fa-link"></i>
@@ -148,13 +169,13 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <img class="p-workModal__img" src="/img/scrn_hiwihi.png" alt="hiwihi scrn">
+                            <img class="p-workModal__img" src="/asset/img/scrn_pcw01.png" alt="hiwihi scrn">
                             <p class="p-workModal__text">
-                                Flashゲーム
+                                趣味で制作したFlashゲーム。<br>東方Project二次創作の ファミコンウォーズ風 ターン制ウォーシミュレーションゲーム。<br>イラストとBGMを外注した以外はほぼ自作で、総製作時間は2000時間以上。<br>Flash自体は今では陳腐化してしまったが、このゲーム制作で培ったプログラミングやデザインの経験は、今も非常に役立っている。
                             </p>
                             <div class="p-workModal__footText">
                                 <i class="fas fa-link"></i>
-                                <a href="https://ce-ya.net/app/hiwihi/">アプリページ</a>
+                                <a href="http://icyas.net/pcw/">アプリページ</a>
                             </div>
                         </div>
                     </div>
@@ -173,7 +194,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <img class="p-workModal__img" src="/img/scrn_hiwihi.png" alt="hiwihi scrn">
+                            <img class="p-workModal__img" src="/asset/img/scrn_hiwihi.png" alt="hiwihi scrn">
                             <p class="p-workModal__text">
                                 Google Analytics ツール
                             </p>
@@ -188,6 +209,7 @@
             <!-- /Modal gatool-->
 
         </section>
+<!-- 
         <section class="l-contact c-section">
             <div class="c-section__inner">
                 <h2 class="c-section__heading"><i class="far fa-envelope"></i>CONTACT</h2>
@@ -200,8 +222,11 @@
                 </form>
             </div>
         </section>
+-->
     </main>
-
+    <footer class="l-footer">
+        © 2019- ceya-net.
+    </footer>
     <script src="dist/js/bundle.js"></script>
 </body>
 

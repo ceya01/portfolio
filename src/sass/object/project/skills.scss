@@ -2,11 +2,18 @@
     margin-bottom: 1em;
     @include shadow();
     &>.progress{
-        height:20px;
+        height:25px;
+        font-size: 0.9rem;
+        background-color: #999;
+        transition: 0.25s;
+        &:hover{
+            @include onHoverButton();
+        }
         &>.progress-bar{
             padding-left:0.5em;
+            letter-spacing: 0.05em;
             text-align: left;
-            font-weight: bold;
+            //font-weight: bold;
         }
     }
 }

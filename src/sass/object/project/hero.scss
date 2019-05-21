@@ -7,8 +7,10 @@
     color: $slmo_white;
     font-size: 24px;
     text-align: center;
+    letter-spacing: 0.05em;
     margin: 0 auto;
     padding: .5em;
+
     @include circle(160px);
     @include shadow();
 }
