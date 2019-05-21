@@ -1,0 +1,43 @@
+
+$imgH : 160px;
+.p-workCol{
+  margin-bottom: 1em;
+}
+.p-workCard{
+  @include shadow();
+  &__header{
+      background-color: $slmo_cobalt;
+      color: $slmo_white;
+      font-weight: bold;
+      @include shadow();
+  }
+  &__img{
+      height: $imgH;
+  }
+  &:hover{
+    @include onHoverButton();
+  }
+}
+
+.p-workModal{
+  &__dialog{
+    width: 80%;
+    max-width:1000px;
+    margin: 1.5em auto;
+  }
+  &__title{
+    font-weight: bold;
+  }
+  &__img{
+    float: left;
+    max-width: 100%;
+    height:$imgH;
+    margin-right: 1em;
+  }
+  &__text{
+
+  }
+  &__footText{
+
+  }
+}

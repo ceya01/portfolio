@@ -1,47 +1,99 @@
-.c-section{
-    padding: 50px 0;  
-    &__heading{
-        border-bottom: 1px solid $slmo_gray;
-        padding: 0.2em 0;
-        margin-bottom: 1em;
-    }
-} 
+.c-section {
+    padding: 60px 0;
 
-.c-icon{
-    $w:100px;
+    &:nth-child(even) {
+        background-color: $slmo_white2;
+    }
+
+    &__heading {
+        //border-top: 1px solid $slmo_gray;
+        //color: $slmo_cobalt;
+        
+        display: flex;
+        margin: 0 auto 30px;
+        padding: 0.5em 1em;
+        text-align: center;
+        letter-spacing: 0.2em;
+        white-space: nowrap;
+        justify-content: center;
+
+        position: relative;
+        &:before,
+        &:after {
+            content: '';
+            position: relative;
+            top: 0.5em;
+            width: 2em;
+            height: 2px;
+            background-color: $slmo_black;
+        }
+        &:before {
+         left:-0.5em
+        }
+        &:after {
+         right: -0.5em
+        }
+        &>.fas,
+        &>.far {
+            margin-right: 0.25em;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__inner {
+        max-width: 1020px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__subText{
+        color: lighten($slmo_black, 20%);
+        margin-bottom: 0.5em;
+        font-size: 0.9em;
+    }
+}
+
+.c-icon {
+    $w: 100px;
     max-width: $w;
     @include circle($w);
 }
 
-.c-form{
-    &__inputText,&__textarea{
+
+.c-form {
+    &__inputText,
+    &__textarea {
         border: 1px solid $slmo_gray;
         border-radius: 5px;
         display: block;
-        margin-bottom:1rem;
+        margin-bottom: 1rem;
         padding: 0.75em;
-        width:100%;
-        &:active,&:focus{
-            outline:2px solid $slmo_cobalt;
+        width: 100%;
+
+        &:active,
+        &:focus {
+            outline: 2px solid tomato;
         }
-        &::placeholder{
-            color:#CCC;
+
+        &::placeholder {
+            color: #CCC;
         }
     }
-    &__submit{
-        background-color: $slmo_cobalt;
+
+    &__submit {
+        background-color: darkorange;
         border: none;
         border-radius: 10px;
-        color:white;
+        color: white;
         display: block;
         padding: 0.75em 0;
         transition: 0.3s;
-        width:100%;
+        width: 100%;
         @include shadow();
-        &:hover{
-            box-shadow: 1px 1px 2px #ddf;
-            transition: 0.2s;
-            transform: translateY(2px);
+
+        &:hover {
+            @include onHoverButton();
         }
     }
 }

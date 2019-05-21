@@ -1,0 +1,12 @@
+.p-skillBlock{
+    margin-bottom: 1em;
+    @include shadow();
+    &>.progress{
+        height:20px;
+        &>.progress-bar{
+            padding-left:0.5em;
+            text-align: left;
+            font-weight: bold;
+        }
+    }
+}
