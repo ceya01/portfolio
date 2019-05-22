@@ -113,16 +113,22 @@
                 <h2 class="c-section__heading"><i class="far fa-newspaper"></i>WORKS</h2>
                 <!-- <div class="c-section__subText">クリックで詳細を表示</div> -->
                 <div class="row">
-                    <div class="col-6 col-md-6 p-workCol">
+                    <div class="col p-workCol">
                         <div class="card p-workCard" data-toggle="modal" data-target="#modal_hiwihi">
                             <div class="card-header p-workCard__header">ﾋｳｨｯﾋﾋｰ</div>
                             <img class="card-img-bottom  p-workCard__img" src="/asset/img/scrn_hiwihi.png" alt="hiwihi scrn">
                         </div>
                     </div>
-                    <div class="col-6 col-md-6 p-workCol" data-toggle="modal" data-target="#modal_pcw">
+                    <div class="col p-workCol" data-toggle="modal" data-target="#modal_pcw">
                         <div class="card p-workCard">
                             <div class="card-header p-workCard__header">ぱちぇコンウォーズ</div>
                             <img class="card-img-bottom  p-workCard__img" src="/asset/img/scrn_pcw01.png" alt="pcw scrn">
+                        </div>
+                    </div>
+                    <div class="col p-workCol" data-toggle="modal" data-target="#modal_gaspmfep">
+                        <div class="card p-workCard">
+                            <div class="card-header p-workCard__header">Gaspmfep</div>
+                            <img class="card-img-bottom  p-workCard__img" src="/asset/img/scrn_gaspmfep.png" alt="gaspmfep scrn">
                         </div>
                     </div>
                 </div>
@@ -144,7 +150,7 @@
                                 簡素なツイッターのようなアプリ。webサービス作成の基礎勉強のために作成。<br>
                                 主にPHP,js,jQuery,ajaxを使用。フレームワークは未使用。<br>
                                 ユーザー登録、プロフィールの編集、ツイートの投稿/編集/削除 という最低限の機能を実装。<br>
-                                制作時間は80時間ほど。
+                                制作時間は70時間ほど。
                             </p>
                             <div class="p-workModal__footText">
                                 <i class="fas fa-link"></i>
@@ -183,24 +189,26 @@
             </div>
             <!-- /Modal pcw-->
             <!-- Modal gatool-->
-            <div class="modal fade p-workModal" id="modal_gatool" tabindex="-1" role="dialog"
-                aria-labelledby="modal_gatool_label" aria-hidden="true">
+            <div class="modal fade p-workModal" id="modal_gaspmfep" tabindex="-1" role="dialog"
+                aria-labelledby="modal_gaspmfep_label" aria-hidden="true">
                 <div class="modal-dialog p-workModal__dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <span class="modal-title p-workModal__title" id="modal_gatool_label">GA Tool</span>
+                            <span class="modal-title p-workModal__title" id="modal_gaspmfep_label">Gaspmfep</span>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <img class="p-workModal__img" src="/asset/img/scrn_hiwihi.png" alt="hiwihi scrn">
+                            <img class="p-workModal__img" src="/asset/img/scrn_gaspmfep.png" alt="gaspmfep scrn">
                             <p class="p-workModal__text">
-                                Google Analytics ツール
+                                Google Analyticsのページ毎のセッション数を、月別に分けたcsvデータとして出力するツール。<br>
+                                <a href="/asset/img/scrn_gaspmfep_out.png">この画像のようなcsv</a>が出力できる。<br>
+                                jsとGoogle Analytics APIを使用。HTML/CSSは最低限のシンプルなもの<br>
                             </p>
                             <div class="p-workModal__footText">
                                 <i class="fas fa-link"></i>
-                                <a href="https://ce-ya.net/app/hiwihi/">アプリページ</a>
+                                <a href="http://ceya.xsrv.jp/GA_spm4ep/">アプリページ</a> (ユーザー名：ceya, パスワード：seiyasu222)
                             </div>
                         </div>
                     </div>

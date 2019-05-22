@@ -13540,15 +13540,19 @@ var SKILL_DATA = {
   },
   html: {
     title: 'html&CSS',
-    desc: '基本的な構成のページであれば制作できます。<br>SassやCSS設計（FLOCSS）も勉強済です。'
+    desc: 'シンプルな構成のページを作成できます。<br>BootStrap,Sass,CSS設計（FLOCSS）も使用できます。'
   },
   js: {
     title: 'javaScript',
-    desc: '簡単なアプリなら製作できます。<br>jQuery,Vueも扱えます。'
+    desc: '簡単なアプリの作成ができます。<br>jQuery,Vueも扱えます。<br>npm/yarnを使ったパッケージ管理や、gulpを使った自動ビルド・ブラウザ確認ができる環境を構築して開発ができます。'
   },
   php: {
     title: 'PHP&MySQL',
     desc: 'ユーザー登録/ログイン/webサービスの基本的なサーバーサイドの機能は実装できます。<br>フレームワークは勉強中です。'
+  },
+  git: {
+    title: 'git',
+    desc: 'バージョン管理の概念と基礎的なコマンドは理解しています。個人使用のみですがファイル履歴管理として使用しています。githubにもソースコードをアップしています。'
   },
   wp: {
     title: 'WordPress',
@@ -13556,7 +13560,7 @@ var SKILL_DATA = {
   },
   design: {
     title: 'webデザイン',
-    desc: 'Adobe XD, Photoshop を扱えます。<br>デザインの基礎的な知識はあります。<br>シンプルなデザインのページであれば作成できます。'
+    desc: 'Adobe XD, Photoshop を扱えます。<br>デザインの基礎的な知識はあります。<br>シンプルなデザインであれば作成できます。'
   },
   video: {
     title: '動画編集/アニメーション制作',
