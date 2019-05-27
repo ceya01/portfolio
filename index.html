@@ -54,7 +54,7 @@
                         <p>2019年よりITエンジニアに転向するため、本格的にweb系の技術を勉強開始。<br>
                             チームでの実務開発は未経験だが、個人では4000時間ほどのプログラミング経験あり。<br>
                             効率化 / 高速化 / 見やすさ / ユーザビリティを考えるのが好き。<br>
-                            どちらかというと、バックエンドよりフロントエンドが好み。
+                            バックエンドよりフロントエンドが好み。
                         </p>
                     </div>
                 </div>
@@ -90,6 +90,21 @@
                                 <div class="progress-bar bg-success"  style="width: 30%">webデザイン : 30%</div>
                             </div>
                         </div>
+                        <div class="p-skillBlock"  @click="showDesc('git')">
+                            <div class="progress">
+                                <div class="progress-bar bg-success"  style="width: 20%">git : 20%</div>
+                            </div>
+                        </div>
+                        <!-- <div class="p-skillBlock"  @click="showDesc('ruby')">
+                            <div class="progress">
+                                <div class="progress-bar bg-success"  style="width: 10%">Ruby/Rails : 10%</div>
+                            </div>
+                        </div>
+                        <div class="p-skillBlock"  @click="showDesc('python')">
+                            <div class="progress">
+                                <div class="progress-bar bg-success"  style="width: 10%">python : 10%</div>
+                            </div>
+                        </div> -->
                         <div class="p-skillBlock"  @click="showDesc('video')">
                             <div class="progress">
                                 <div class="progress-bar bg-success"  style="width: 60%">動画編集/アニメーション制作 : 60%</div>
@@ -116,19 +131,19 @@
                     <div class="col p-workCol">
                         <div class="card p-workCard" data-toggle="modal" data-target="#modal_hiwihi">
                             <div class="card-header p-workCard__header">ﾋｳｨｯﾋﾋｰ</div>
-                            <img class="card-img-bottom  p-workCard__img" src="/asset/img/scrn_hiwihi.png" alt="hiwihi scrn">
+                            <img class="card-img-bottom  p-workCard__img" src="asset/img/scrn_hiwihi.png" alt="hiwihi scrn">
                         </div>
                     </div>
                     <div class="col p-workCol" data-toggle="modal" data-target="#modal_pcw">
                         <div class="card p-workCard">
                             <div class="card-header p-workCard__header">ぱちぇコンウォーズ</div>
-                            <img class="card-img-bottom  p-workCard__img" src="/asset/img/scrn_pcw01.png" alt="pcw scrn">
+                            <img class="card-img-bottom  p-workCard__img" src="asset/img/scrn_pcw01.png" alt="pcw scrn">
                         </div>
                     </div>
                     <div class="col p-workCol" data-toggle="modal" data-target="#modal_gaspmfep">
                         <div class="card p-workCard">
                             <div class="card-header p-workCard__header">Gaspmfep</div>
-                            <img class="card-img-bottom  p-workCard__img" src="/asset/img/scrn_gaspmfep.png" alt="gaspmfep scrn">
+                            <img class="card-img-bottom  p-workCard__img" src="asset/img/scrn_gaspmfep.png" alt="gaspmfep scrn">
                         </div>
                     </div>
                 </div>
@@ -145,7 +160,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <img class="p-workModal__img" src="/asset/img/scrn_hiwihi.png" alt="hiwihi scrn">
+                            <img class="p-workModal__img" src="asset/img/scrn_hiwihi.png" alt="hiwihi scrn">
                             <p class="p-workModal__text">
                                 簡素なツイッターのようなアプリ。webサービス作成の基礎勉強のために作成。<br>
                                 主にPHP,js,jQuery,ajaxを使用。フレームワークは未使用。<br>
@@ -175,7 +190,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <img class="p-workModal__img" src="/asset/img/scrn_pcw01.png" alt="hiwihi scrn">
+                            <img class="p-workModal__img" src="asset/img/scrn_pcw01.png" alt="hiwihi scrn">
                             <p class="p-workModal__text">
                                 趣味で制作したFlashゲーム。<br>東方Project二次創作の ファミコンウォーズ風 ターン制ウォーシミュレーションゲーム。<br>イラストとBGMを外注した以外はほぼ自作で、総製作時間は2000時間以上。<br>Flash自体は今では陳腐化してしまったが、このゲーム制作で培ったプログラミングやデザインの経験は、今も非常に役立っている。
                             </p>
@@ -200,10 +215,10 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <img class="p-workModal__img" src="/asset/img/scrn_gaspmfep.png" alt="gaspmfep scrn">
+                            <img class="p-workModal__img" src="asset/img/scrn_gaspmfep.png" alt="gaspmfep scrn">
                             <p class="p-workModal__text">
                                 Google Analyticsのページ毎のセッション数を、月別に分けたcsvデータとして出力するツール。<br>
-                                <a href="/asset/img/scrn_gaspmfep_out.png">この画像のようなcsv</a>が出力できる。<br>
+                                <a href="asset/img/scrn_gaspmfep_out.png">この画像のようなcsv</a>が出力できる。<br>
                                 jsとGoogle Analytics APIを使用。HTML/CSSは最低限のシンプルなもの<br>
                                 APIの仕様理解も含め、制作時間は10時間程度<br>
                             </p>
